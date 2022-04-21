@@ -52,7 +52,7 @@ async fn process_v3(socket: TcpStream, db: Db)
 	{
 		Set(cmd) =>{
 			let mut db = db.lock().unwrap();
-			db.insert(cmd.key().to_string(), cmd.value().to_vec());
+			db.insert(cmd.key().to_string(), cmd.value().clone());
 			Frame::Simple("OK".to_string())
 		}
 
