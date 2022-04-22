@@ -4,6 +4,8 @@ use std::sync::{Arc, Mutex};
 use tokio::net::{TcpListener, TcpStream};
 use mini_redis::{Connection, Frame};
 
+#[allow(dead_code)]
+
 type Db = Arc<Mutex<HashMap<String, Bytes>>>;
 
 struct CanIncrement{
