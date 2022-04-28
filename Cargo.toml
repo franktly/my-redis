@@ -3,6 +3,7 @@ name = "my-redis"
 version = "0.1.0"
 authors = ["tly"]
 edition = "2018"
+default-run ="async-depth"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
