@@ -3,7 +3,7 @@ name = "my-redis"
 version = "0.1.0"
 authors = ["tly"]
 edition = "2018"
-default-run ="async-depth"
+default-run ="mini-tokio"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -11,6 +11,8 @@ default-run ="async-depth"
 tokio = { version = "1", features = ["full"]}
 mini-redis = "0.4"
 bytes = "1"
+crossbeam = "0.8"
+futures = "0.3"
 
 [[bin]]
 name = "server"
