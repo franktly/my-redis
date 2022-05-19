@@ -3,7 +3,7 @@ name = "my-redis"
 version = "0.1.0"
 authors = ["tly"]
 edition = "2018"
-default-run ="mini-tokio"
+default-run ="structopt"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -13,6 +13,8 @@ mini-redis = "0.4"
 bytes = "1"
 crossbeam = "0.8"
 futures = "0.3"
+structopt = {version = "0.3", default-features = false}
+clap = "2.23"
 
 [[bin]]
 name = "server"

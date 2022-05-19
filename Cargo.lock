@@ -385,9 +385,11 @@ name = "my-redis"
 version = "0.1.0"
 dependencies = [
  "bytes",
+ "clap",
  "crossbeam",
  "futures",
  "mini-redis",
+ "structopt",
  "tokio",
 ]
 
