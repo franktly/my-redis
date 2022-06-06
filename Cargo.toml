@@ -3,7 +3,7 @@ name = "my-redis"
 version = "0.1.0"
 authors = ["tly"]
 edition = "2018"
-default-run ="structopt"
+default-run ="sync"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -15,6 +15,10 @@ crossbeam = "0.8"
 futures = "0.3"
 structopt = {version = "0.3", default-features = false}
 clap = "2.23"
+serde_json = "1"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+lazy_static = "1.4.0"
 
 [[bin]]
 name = "server"
@@ -23,3 +27,15 @@ path = "src/server/main.rs"
 [[bin]]
 name = "client"
 path = "src/client/main.rs"
+
+[[bin]]
+name = "structopt"
+path = "src/bin/concept/structopt.rs"
+
+[[bin]]
+name = "tracing"
+path = "src/bin/concept/tracing.rs"
+
+[[bin]]
+name = "sync"
+path = "src/bin/concept/sync.rs"

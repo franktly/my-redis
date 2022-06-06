@@ -1,2 +1,4 @@
 target/debug/*
 target/.rustc_info.json
+Cargo.lock
+run.txt
